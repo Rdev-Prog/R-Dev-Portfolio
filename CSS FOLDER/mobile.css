@@ -1,0 +1,530 @@
+@media screen and (max-width: 425px) {
+    img {
+        height: 50px;
+    }   
+
+    /* KEYFRAMES */
+    @keyframes leftToRight {
+        from {
+            opacity: 0%;
+            transform: translateX(-100px);
+        }
+        to {
+            opacity: 100%;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes rightToLeft {
+        from {
+            opacity: 0%;
+            transform: translateX(100px);
+        }
+        to {
+            opacity: 100%;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes topToBottom {
+        from {
+            opacity: 100%;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0%;
+            transform: translateY(100px);
+        }
+    }
+    @keyframes bottomToTop {
+        from {
+            opacity: 0%;
+            transform: translateY(100px);
+        }
+        to {
+            opacity: 100%;
+            transform: translateY(0px);
+        }
+    }
+
+    /* ANIMATION FOR SHOWING NAVBAR */
+    .showNav {
+        animation: bottomToTop 0.5s ease-out 1;
+    }
+    .hideNav {
+        animation: topToBottom 0.5s ease-in 1;
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .container {
+        width: 100%;
+        height: 100dvh;
+    }
+
+    .home, .skill, .project, .service, footer {
+        padding: 20px;
+    }
+
+    /* DESIGN FOR HOME */
+    .container .home {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* DESIGN FOR - HOME - HEADER */
+    .container .home header {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    /* DESIGN FOR - HOME - HEADER - LOGO */
+    .container .home header .logo-con {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* DESIGN FOR - HOME - HEADER - LOGO - IMAGE */
+    .container .home header .logo-con img {
+        height: 45px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    /* DESIGN FOR - HOME - HEADER - LOGO - TEXT */
+    .container .home header .logo-con p {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    /* DESIGN FOR - HOME - HEADER - LOGO - TEXT */
+    .container .home header .logo-con p::first-letter {
+        font-size: 25px;
+    }
+
+    /* DESIGN FOR - HOME - HEADER - SHORETEND NAVABAR */
+    .container .home header .nav-bar-shortened {
+        display: block;
+    }    
+    .container .home header .nav-bar-shortened i {
+        font-size: 20px;
+    }
+
+    /* DESIGN FOR - HOME - HEADER - EXTENDED NAVABAR */
+    .container .home header .nav-bar-extended {
+        position: absolute;
+        display: none;
+        gap: 30px;
+        flex-direction: column;
+        top: 70px;
+        background-color: var(--color-yellow);
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    /* DESIGN FOR - HOME - HEADER - EXTENDED NAVABAR - LINKS */
+    .container .home header .nav-bar-extended a {
+        text-decoration: none;
+        color: var(--color-black);
+    }
+
+    /* DESIGN FOR - HOME - MAIN CONTENT */
+    .container .home section {
+        height: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 40% 10%;
+        grid-template-areas: 
+        "img"
+        "txt"
+        "soc"
+        ;
+        row-gap: 10px;
+    }
+
+    /* DESIGN FOR - HOME - MAIN CONTENT - IMAGE */
+    .container .home section .img-con {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+    .container .home section .img-con img {
+        height: 85%;
+        border-radius: 50%;
+    }
+
+    /* DESIGN FOR - HOME - MAIN CONTENT - TEXT */
+    .container .home section .text-con {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - 1 */
+    .container .home section .text-con p:nth-child(1) {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - 2 */
+    .container .home section .text-con p:nth-child(2) {
+        font-weight: 700;
+        font-size: 35px;
+    }
+    .container .home section .text-con p:nth-child(2):after {
+        content: "Web Developer";
+        color: var(--color-yellow);
+    }
+
+    /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - 3 */
+    .container .home section .text-con p:nth-child(3) {
+        font-size: 18px;
+        margin-bottom: 25px;
+    } 
+
+    /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - BUTTON */
+    .container .home section .text-con a {
+        text-decoration: none;
+        background-color: var(--color-yellow);
+        color: var(--color-black);
+        padding: 8px 24px;
+        border-radius: 4px;
+        font-weight: 700;
+        border: none;
+        transition-duration: 0.1s;
+    }
+    .container .home section .text-con a:active {
+        transform: scale(0.98);
+        transition-duration: 0.1s;
+    }
+
+    /* DESIGN FOR - HOME - MAIN CONTENT - SOC MED LINKS */
+    .container .home section .soc-med-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .container .home section .soc-med-con i {
+        font-size: 25px;
+    }
+
+    /* DESIGN FOR ABOUT */
+    .container .skill {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* DESIGN FOR skill - HEADER - BACK TO TOP BUTTON */
+    .container .skill header,
+    .container .project header,
+    .container .service header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10%;
+    }
+
+    /* DESIGN FOR skill - HEADER - BACK TO TOP BUTTON */
+    .container .skill header a,
+    .container .project header a,
+    .container .service header a{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-decoration: none;
+        background-color: var(--color-yellow);
+        padding: 8px 10px;
+        border-radius: 100px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .container .skill header a i,
+    .container .skill header a p, 
+    .container .project header a i,
+    .container .project header a p, 
+    .container .service header a i,
+    .container .service header a p {
+        color: var(--color-black);
+    }
+
+    /* DESIGN FOR skill - HEADER - TITLE */
+    .container .skill header .title,
+    .container .project header .title,
+    .container .service header .title {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--color-yellow);
+    }
+
+    /* DESIGN FOR skill - MAIN CONTENT */
+    .container .skill section {
+        height: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    /* DESIGN FOR skill - MAIN CONTENT - TECH STACK */
+    .container .skill section .tech-stack-con {
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        overflow-y: scroll;
+    }
+    .container .skill section .tech-stack-con .stack-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--color-white);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .container .skill section .tech-stack-con .stack-box i {
+        font-size: 70px;
+        color: var(--color-black);
+    }
+    .container .skill section .tech-stack-con .stack-box p {
+        font-size: 20px;
+        color: var(--color-black);
+    }
+
+    /* DESIGN FOR PROJECTS */
+    .container .project {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* DESIGN FOR PROJECTS - MAIN CONTENT */
+    .container .project section {
+        height: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        overflow-y: scroll;
+    }
+    .container .project section .project-box {
+        background-color: var(--color-white);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 500px;
+        padding: 10px;
+    }
+    .container .project section .project-box img {
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    .container .project section .project-box .title {
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--color-black);
+    }
+    .container .project section .project-box .description {
+        color: var(--color-black);
+        flex-grow: 1;
+    }
+    .container .project section .project-box .tech-stack {
+        display: flex;
+        gap: 10px;
+        height: fit-content;
+        padding-block: 4px;
+        flex-wrap: wrap;
+
+    }
+    .container .project section .project-box .tech-stack p {
+        color: var(--color-black);
+        font-size: 14px;
+    } 
+    .container .project section .project-box button {
+        padding: 10px;
+        font-weight: 500;
+        color: var(--color-black);
+        background-color: var(--color-yellow);
+        border-radius: 10px;
+        border: none;
+        font-size: 18px;
+    }
+
+    /* DESIGN FOR SERVICE */
+    .container .service {
+        height: 95%;
+        width: 100%;
+    }
+
+    /* DESIGN FOR SERVICE - MAIN CONTENT */
+    .container .service section {
+        height: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70% 25% 5%;
+    }
+
+    /* DESIGN FOR SERVICE - MAIN CONTENT - SERVICE OFFERED (BOX) */
+    .container .service section .service-con {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container .service section .service-con .service-box .service-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .container .service section .service-con .service-box .service-title i {
+        padding: 10px;
+        font-size: 18px;
+        color: var(--color-black);
+        display: flex;
+        aspect-ratio: 1;
+        width: 45px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-yellow);
+    }
+    .container .service section .service-con .service-box .service-title p {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--color-yellow);
+    }
+
+    /* DESIGN FOR SERVICE - MAIN CONTENT - CONTACT DETAILS */
+    .container .service section .contact-con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container .service section .contact-con .contact-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+    }
+    .container .service section .contact-con .contact-box i {
+        font-size: 25px;
+    }
+    .container .service section .contact-con .contact-box p {
+        font-size: 18px;
+    }
+
+    /* DESIGN FOR SERVICE - MAIN CONTENT - FOOTER */
+    .container .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5%;
+        width: 100%;
+        background-color: var(--color-yellow);
+        color: var(--color-black);
+    }
+
+    /* LANGUAGE COLORS */
+    .language {
+        padding: 4px 8px;
+        border-radius: 100px;
+    }
+    .html {
+        background-color: #EE6628;
+    }
+    .css {
+        background-color: #5ca5d3;
+    }
+    .js {
+        background-color: #F5DD19;
+    }
+    .sql {
+        background-color: #F39010;
+    }
+    .php {
+        background-color: #697dc0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - 1 */
+    .container .home section .text-con p:nth-child(1) {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - 2 */
+    .container .home section .text-con p:nth-child(2) {
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .container .home section .text-con p:nth-child(2):after {
+        content: "Web Developer";
+        color: var(--color-yellow);
+    }
+
+    /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - 3 */
+    .container .home section .text-con p:nth-child(3) {
+        font-size: 18px;
+        margin-bottom: 20px;
+    } 
+
+    /* DESIGN FOR PROJECTS - MAIN CONTENT */
+    .container .project section .project-box img {
+        width: 100%;
+        height: 40%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* DESIGN FOR - HOME - MAIN CONTENT - IMAGE */
+    .container .home section .img-con {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+    .container .home section .img-con img {
+        height: 75%;
+        border-radius: 50%;
+    }
+
+    /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - 1 */
+    .container .home section .text-con p:nth-child(1) {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - 2 */
+    .container .home section .text-con p:nth-child(2) {
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .container .home section .text-con p:nth-child(2):after {
+        content: "Web Developer";
+        color: var(--color-yellow);
+    }
+
+    /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - 3 */
+    .container .home section .text-con p:nth-child(3) {
+        font-size: 15px;
+        margin-bottom: 20px;
+    } 
+
+    /* DESIGN FOR PROJECTS - MAIN CONTENT */
+    .container .project section .project-box img {
+        width: 100%;
+        height: 35%;
+        border-radius: 10px;
+    }
+}
