@@ -407,7 +407,8 @@
     .container .service section .contact-con {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: end;
+        align-items: end;
         gap: 20px;
     }
     .container .service section .contact-con .contact-box {
