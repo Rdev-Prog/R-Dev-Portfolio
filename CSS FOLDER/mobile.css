@@ -171,14 +171,14 @@
     
     /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - 1 */
     .container .home section .text-con p:nth-child(1) {
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 700;
     }
 
     /* DESIGN FOR - HOME - MAIN CONTENT - TEXT - 2 */
     .container .home section .text-con p:nth-child(2) {
         font-weight: 700;
-        font-size: 35px;
+        font-size: 25px;
     }
     .container .home section .text-con p:nth-child(2):after {
         content: "Web Developer";
